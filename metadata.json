@@ -1,0 +1,6 @@
+{
+  "name": "TV-PREMIUM-LAUNCHER",
+  "description": "Premium Android TV Box Launcher with Arrow D-pad focus, custom dynamic dashboard themes, and automatic OTA updates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
