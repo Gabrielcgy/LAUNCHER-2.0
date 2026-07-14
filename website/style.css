@@ -1,0 +1,82 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F1115;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1E293B;
+    border-radius: 999px;
+    border: 2px solid #0F1115;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3B82F6;
+}
+
+/* Base style enhancements */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0F1115;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(249, 115, 22, 0.03) 0px, transparent 50%);
+    background-attachment: fixed;
+}
+
+/* Custom interactive state animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Hover glow for cards */
+.bento-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+    transform: translateY(-2dp);
+    box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* Button glow effect */
+#btn-download {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#btn-download::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: all 0.6s ease;
+}
+
+#btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -6px rgba(59, 130, 246, 0.4);
+    background-color: #f8fafc;
+}
+
+#btn-download:hover::after {
+    left: 100%;
+}

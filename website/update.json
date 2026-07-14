@@ -1,0 +1,13 @@
+{
+  "versionCode": 2,
+  "versionName": "1.1",
+  "releaseDate": "14 de Julio, 2026",
+  "apkUrl": "downloads/Lanzador-TV-Premium.apk",
+  "downloadText": "Descargar Lanzador de TV Premium v1.1",
+  "changelog": [
+    "Nueva interfaz con diseño Bento Grid Premium súper elegante",
+    "Arreglado bloqueo de inicio del sistema (corrección de compatibilidad de temas)",
+    "Fondo de pantalla optimizado y transiciones animadas ultra fluidas",
+    "Rendimiento del launcher mejorado en dispositivos de bajos recursos"
+  ]
+}
